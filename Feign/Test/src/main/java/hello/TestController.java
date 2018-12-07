@@ -10,8 +10,8 @@ public class TestController {
     @Autowired
     MyService myService;
 
-    @RequestMapping("/hello")
-    public String helloName() {
-        return myService.getName();
+    @RequestMapping("/getUrl")
+    public String HomePage() {
+        return myService.getHomePage();
     }
 }
