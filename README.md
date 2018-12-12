@@ -6,4 +6,7 @@
 3、编辑Eureka Client application.yml更改server.port来创建2个client<br>
 4、启动feign，实现了ribbon负载均衡和hystrix<br>
 5、eureka服务端web界面地址：http://localhost:8761/eureka/ <br>
-6、客户端调用接口：http://localhost:8765/getUrl，会分别响应eureka client刚刚自己配置的两个port
+6、客户端调用接口：http://localhost:8765/getUrl，会分别响应eureka client刚刚自己配置的两个port <br>
+
+>架构图如下：
+![Image text](https://raw.githubusercontent.com/testwjz/Eureka-Server/master/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.png)
