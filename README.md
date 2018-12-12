@@ -1,4 +1,4 @@
-*# Spring cloud demo(单例模式)
+# Spring cloud demo(单例模式)
 
 > 本demo使用gradle构建工具构建<br>
 1、分别对Eureka Client/Eureka Server/Feign 进行构建<br>
