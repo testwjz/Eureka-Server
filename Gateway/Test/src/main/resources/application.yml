@@ -2,16 +2,21 @@ server:
   port: 8080
 
 spring:
-  application:
-    name: gateway
   cloud:
     gateway:
       routes:
-      - id: 163_route
-        uri: http://www.163.com/
+      - id: host_route
+        uri: lb://eureka-client
         predicates:
-        - Path=/163
-      - id: spring_route
-        uri: https://spring.io/projects/
-        predicates:
-        - Path=/spring
+        - Path=/client/**
+        filters:
+        - StripPrefix=1
+  application:
+    name: gateway-server
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
