@@ -7,7 +7,9 @@
 4、启动feign，实现了ribbon负载均衡和hystrix<br>
 5、eureka服务端web界面地址：http://localhost:8761/eureka/ <br>
 6、客户端调用接口：http://localhost:8765/getUrl，会分别响应eureka client刚刚自己配置的两个port <br>
-7、启动Gateway构建后的jar包，可实现网关路由转发（目前仅定义服务为eureka-client,可更改为feign实现整个流程演示）
+7、启动Gateway构建后的jar包，可实现网关路由转发 <br>
+8、客户端调用：http://localhost:8080/test 可方法/test接口 <br> 
+9、目前仅定义服务为eureka-client,可更服务lb为feign，则可以访问：http://localhost:8080/getUrl
 
 ## 架构图如下：
 ![Image text](https://raw.githubusercontent.com/testwjz/Eureka-Server/master/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.png)
