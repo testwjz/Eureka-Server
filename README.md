@@ -12,4 +12,4 @@
 9、目前仅定义服务为eureka-client,可更服务lb为feign，则可以访问：http://localhost:8080/getUrl
 
 ## 架构图如下：
-![Image text](https://raw.githubusercontent.com/testwjz/Eureka-Server/master/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.png)
+![Image text](https://raw.githubusercontent.com/testwjz/spring-cloud-demo/master/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.png)
